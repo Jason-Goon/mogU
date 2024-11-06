@@ -1,0 +1,31 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url('/Roboto-Thin.ttf') format('truetype'), url('/assets/fonts/Roboto-Thin.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Force Roboto Thin as the default font */
+body {
+    font-family: 'Roboto Thin', sans-serif !important;
+}
+
+/* Adjustments for line spacing and forced line widths */
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.5rem; /* Extra spacing between lines in hero */
+}
+
+/* Header styling */
+header {
+    background-color: rgba(242, 195, 170, 0.3); /* Accent color with transparency */
+    backdrop-filter: blur(10px); /* Blur effect */
+}
+
+/* Visible separators between selection cards */
+.divide-outlineWhite > :not([hidden]) ~ :not([hidden]) {
+    border-top-width: 1px;
+}
