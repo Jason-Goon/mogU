@@ -3,15 +3,16 @@
 @import "tailwindcss/utilities";
 
 @font-face {
-    font-family: 'Roboto Thin';
-    src: url('/Roboto-Thin.ttf') format('truetype'), url('/assets/fonts/Roboto-Thin.ttf') format('truetype');
+    font-family: 'Roboto';
     font-weight: 300;
-    font-style: normal;
+    src: url('assets/fonts/Roboto-Thin.ttf') format('truetype');
 }
+
 
 /* Force Roboto Thin as the default font */
 body {
-    font-family: 'Roboto Thin', sans-serif !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 /* Adjustments for line spacing and forced line widths */
